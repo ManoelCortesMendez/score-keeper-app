@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Score Keeper App</string>
+    <string name="france_flag">Flag of France</string>
+    <string name="spain_flag">Flag of Spain</string>
 </resources>
