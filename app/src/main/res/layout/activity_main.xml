@@ -72,7 +72,8 @@
         app:layout_constraintBottom_toTopOf="@+id/franceYellowCards"
         app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franceGoals" />
+        app:layout_constraintTop_toBottomOf="@+id/franceGoals"
+        android:onClick="addFranceGoal" />
 
     <Button
         android:id="@+id/spainGoalBtn"
@@ -83,7 +84,8 @@
         app:layout_constraintBottom_toTopOf="@+id/spainYellowCards"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/centralGuide"
-        app:layout_constraintTop_toBottomOf="@+id/spainGoals" />
+        app:layout_constraintTop_toBottomOf="@+id/spainGoals"
+        android:onClick="addSpainGoal"/>
 
     <TextView
         android:id="@+id/franceYellowCards"
@@ -120,7 +122,8 @@
         app:layout_constraintBottom_toTopOf="@+id/franceRedCards"
         app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franceYellowCards" />
+        app:layout_constraintTop_toBottomOf="@+id/franceYellowCards"
+        android:onClick="addFranceYellow"/>
 
     <Button
         android:id="@+id/spainYellowBtn"
@@ -131,7 +134,8 @@
         app:layout_constraintBottom_toTopOf="@+id/spainRedCards"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/centralGuide"
-        app:layout_constraintTop_toBottomOf="@+id/spainYellowCards" />
+        app:layout_constraintTop_toBottomOf="@+id/spainYellowCards"
+        android:onClick="addSpainYellow"/>
 
     <TextView
         android:id="@+id/franceRedCards"
@@ -168,7 +172,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomBarrier"
         app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franceRedCards" />
+        app:layout_constraintTop_toBottomOf="@+id/franceRedCards"
+        android:onClick="addFranceRed"/>
 
     <Button
         android:id="@+id/spainRedBtn"
@@ -179,7 +184,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomBarrier"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/centralGuide"
-        app:layout_constraintTop_toBottomOf="@+id/spainRedCards" />
+        app:layout_constraintTop_toBottomOf="@+id/spainRedCards"
+        android:onClick="addSpainRed"/>
 
     <Button
         android:id="@+id/resetBtn"
