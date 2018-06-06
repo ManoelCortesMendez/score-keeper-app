@@ -67,25 +67,25 @@
         android:id="@+id/franceGoalBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addFranceGoal"
         android:text="@string/goal_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/franceYellowCards"
         app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franceGoals"
-        android:onClick="addFranceGoal" />
+        app:layout_constraintTop_toBottomOf="@+id/franceGoals" />
 
     <Button
         android:id="@+id/spainGoalBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addSpainGoal"
         android:text="@string/goal_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/spainYellowCards"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/centralGuide"
-        app:layout_constraintTop_toBottomOf="@+id/spainGoals"
-        android:onClick="addSpainGoal"/>
+        app:layout_constraintTop_toBottomOf="@+id/spainGoals" />
 
     <TextView
         android:id="@+id/franceYellowCards"
@@ -117,25 +117,25 @@
         android:id="@+id/franceYellowBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addFranceYellow"
         android:text="@string/yellow_card_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/franceRedCards"
         app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franceYellowCards"
-        android:onClick="addFranceYellow"/>
+        app:layout_constraintTop_toBottomOf="@+id/franceYellowCards" />
 
     <Button
         android:id="@+id/spainYellowBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addSpainYellow"
         android:text="@string/yellow_card_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/spainRedCards"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/centralGuide"
-        app:layout_constraintTop_toBottomOf="@+id/spainYellowCards"
-        android:onClick="addSpainYellow"/>
+        app:layout_constraintTop_toBottomOf="@+id/spainYellowCards" />
 
     <TextView
         android:id="@+id/franceRedCards"
@@ -167,31 +167,32 @@
         android:id="@+id/franceRedBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addFranceRed"
         android:text="@string/red_card_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomBarrier"
         app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/franceRedCards"
-        android:onClick="addFranceRed"/>
+        app:layout_constraintTop_toBottomOf="@+id/franceRedCards" />
 
     <Button
         android:id="@+id/spainRedBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addSpainRed"
         android:text="@string/red_card_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomBarrier"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/centralGuide"
-        app:layout_constraintTop_toBottomOf="@+id/spainRedCards"
-        android:onClick="addSpainRed"/>
+        app:layout_constraintTop_toBottomOf="@+id/spainRedCards" />
 
     <Button
         android:id="@+id/resetBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:onClick="resetAll"
         android:text="@string/reset_label"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"

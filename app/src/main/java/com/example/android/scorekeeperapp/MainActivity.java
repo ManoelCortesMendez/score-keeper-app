@@ -59,8 +59,24 @@ public class MainActivity extends AppCompatActivity {
         displayNumberInId(spainReds, spainRedsId);
     }
 
+    public void resetAll(View v) {
+        franceGoals = 0;
+        franceYellows = 0;
+        franceReds = 0;
+        spainGoals = 0;
+        spainYellows = 0;
+        spainReds = 0;
+
+        displayNumberInId(franceGoals, franceGoalsId);
+        displayNumberInId(franceYellows, franceYellowsId);
+        displayNumberInId(franceReds, franceRedsId);
+        displayNumberInId(spainGoals, spainGoalsId);
+        displayNumberInId(spainYellows, spainYellowsId);
+        displayNumberInId(spainReds, spainRedsId);
+    }
+
     public void displayNumberInId(int aNumber, int anId) {
-        TextView textToUpdate = (TextView) findViewById(anId);
-        textToUpdate.setText(String.valueOf(aNumber));
+        TextView viewToUpdate = (TextView) findViewById(anId);
+        viewToUpdate.setText(String.valueOf(aNumber));
     }
 }
