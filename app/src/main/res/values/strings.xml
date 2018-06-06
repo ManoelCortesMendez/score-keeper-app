@@ -2,4 +2,14 @@
     <string name="app_name">Score Keeper App</string>
     <string name="france_flag">Flag of France</string>
     <string name="spain_flag">Flag of Spain</string>
+    <string name="red_card_label">Red Card</string>
+    <string name="spain_red_cards">0</string>
+    <string name="yellow_card_label">Yellow Card</string>
+    <string name="spain_yellow_cards">0</string>
+    <string name="goal_label">Goal</string>
+    <string name="spain_goals">0</string>
+    <string name="reset_label">Reset</string>
+    <string name="france_yellow_cards">0</string>
+    <string name="france_red_cards">0</string>
+    <string name="france_goals">0</string>
 </resources>

@@ -10,14 +10,14 @@
     <ImageView
         android:id="@+id/franceFlag"
         android:layout_width="0dp"
-        android:layout_height="104dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/france_flag"
-        app:layout_constraintEnd_toStartOf="@+id/spainFlag"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/france_flag" />
@@ -25,17 +25,189 @@
     <ImageView
         android:id="@+id/spainFlag"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="88dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/franceFlag"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/spain_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spain_flag" />
+
+    <TextView
+        android:id="@+id/franceGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/france_goals"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/franceGoalBtn"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franceFlag" />
+
+    <TextView
+        android:id="@+id/spainGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/spain_goals"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/spainGoalBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toBottomOf="@+id/spainFlag" />
+
+    <Button
+        android:id="@+id/franceGoalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/franceYellowCards"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franceGoals" />
+
+    <Button
+        android:id="@+id/spainGoalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spainYellowCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toBottomOf="@+id/spainGoals" />
+
+    <TextView
+        android:id="@+id/franceYellowCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/france_yellow_cards"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/franceYellowBtn"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franceGoalBtn" />
+
+    <TextView
+        android:id="@+id/spainYellowCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/spain_yellow_cards"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/spainYellowBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toBottomOf="@+id/spainGoalBtn" />
+
+    <Button
+        android:id="@+id/franceYellowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yellow_card_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/franceRedCards"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franceYellowCards" />
+
+    <Button
+        android:id="@+id/spainYellowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yellow_card_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spainRedCards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toBottomOf="@+id/spainYellowCards" />
+
+    <TextView
+        android:id="@+id/franceRedCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/france_red_cards"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/franceRedBtn"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franceYellowBtn" />
+
+    <TextView
+        android:id="@+id/spainRedCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/spain_red_cards"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/spainRedBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toBottomOf="@+id/spainYellowBtn" />
+
+    <Button
+        android:id="@+id/franceRedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red_card_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBarrier"
+        app:layout_constraintEnd_toStartOf="@+id/centralGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/franceRedCards" />
+
+    <Button
+        android:id="@+id/spainRedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red_card_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBarrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/centralGuide"
+        app:layout_constraintTop_toBottomOf="@+id/spainRedCards" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/reset_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/centralGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/bottomBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="resetBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/franceFlag"
-        app:layout_constraintTop_toTopOf="@+id/franceFlag"
-        app:srcCompat="@drawable/spain_flag"
-        android:contentDescription="@string/spain_flag" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
